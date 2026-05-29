@@ -37,9 +37,12 @@ const ageRestriction = (birthYears) => {
   const yearNow = 2026;
   const age = yearNow - birthYears;
   let usersAge = age;
-  let bellowAge = 18;
-  let waitPeriod = bellowAge - usersAge;
+  // let bellowAge = 18;
+  let waitPeriod = 18 - usersAge;
 
+
+  // method 1
+  /*
   let message;
 
   if (usersAge > 18) {
@@ -50,6 +53,19 @@ const ageRestriction = (birthYears) => {
     message = `You are currently ${age} years old, wait ${waitPeriod} more years to be able to use this application`;
   }
   return message;
+  */
+
+  // method 2 
+  if(usersAge > 18){
+    console.log(`You are currently ${age} years old, you can use this application`);
+    return -1; 
+  }else if (usersAge = 17){
+    console.log(`You are currently ${age} years old, wait ${waitPeriod} more year to be able to use this application`);
+    return waitPeriod; 
+  }else{
+    console.log(`You are currently ${age} years old, wait ${waitPeriod} more years to be able to use this application`);
+    return waitPeriod;
+  }
 };
 const result3 = ageRestriction(2002);
 console.log(result3);

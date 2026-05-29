@@ -13,3 +13,4 @@ Used function expression to calculate the retirement age of Gideon.
 1. I calculated users age, implementing the formular above. 
 2. Logged in a variable to calculate the restricted age. 
 3. Used if else statement to pass a message to the user depending on their current age. 
+(a). Added a new method to calculate the age restriction task
